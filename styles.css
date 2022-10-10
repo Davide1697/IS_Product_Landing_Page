@@ -44,10 +44,13 @@ form{
     margin:0 auto;
 }
 
+
+
+
 .btn{
     margin-top: 15px;
     padding:10px 10px;
-    height:40px;
+    
     font-size:1em;
     border: 0 black solid;
     border-radius: 3px;
@@ -109,6 +112,7 @@ nav > ul{
     background-color: #f1c40f;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 80px;
   }
 
   .grid{
@@ -117,27 +121,33 @@ nav > ul{
 
 #features .icon{
     width:20vw;
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items:center;
     justify-content:center;
     color:darkorange;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     margin-left: 200px;
     
+}
+.icon{
+    padding-right: 5px;
 }
 
 #features .desc{
     display:flex;
     flex-direction: column;
     justify-content:center;
-    height:100px;
+    height:60px;
     width:80vw;
     padding:5px;
     margin-right: 200px;
 
 }
-
+.desc{
+    display: flex;
+    align-content: flex-start;
+}
 #features h2{
     padding-bottom: 5px;
     color: black;
@@ -221,4 +231,35 @@ footer {
   }
 
 
+@media  (max-width:700px){
 
+    
+
+    #features .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px
+    
+   }
+   #features .icon{
+    display: none;
+   }
+   
+   #pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 10px;
+   }
+
+   .product{
+    width:100%;
+   }
+
+
+}
